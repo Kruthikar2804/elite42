@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  background-color: grey;
+}
+ul li {
+  padding: 10px;
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+ul li a:hover {
+  color: red;
+}/*# sourceMappingURL=style.css.map */
