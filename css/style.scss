@@ -8,19 +8,9 @@ $color-red:red;
 $color-grey:grey;
 
 ul{
+   list-style: none;
+}
+
+ul{
     display: flex;
-    justify-content: flex-end;
-    background-color: $color-grey;
-    li{
-        padding: 10px;
-        list-style: none;
-        a{
-            text-decoration: none;
-            text-transform: uppercase;
-            color: $color-white;
-            &:hover{
-                color: $color-red;
-            }
-        }
-    }
 }
