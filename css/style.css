@@ -4,19 +4,34 @@
 }
 
 ul {
-  display: flex;
-  justify-content: flex-end;
-  background-color: grey;
-}
-ul li {
-  padding: 10px;
   list-style: none;
+  background-color: purple;
 }
-ul li a {
-  text-decoration: none;
+
+ul.parent {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+ul.parent li {
+  position: relative;
+}
+ul.parent li a {
+  padding: 10px;
   text-transform: uppercase;
+  text-decoration: none;
+  font-size: 20px;
   color: white;
 }
-ul li a:hover {
-  color: red;
+ul.parent li a:hover {
+  color: pink;
+}
+ul.parent li ul {
+  position: absolute;
+  display: none;
+  width: 200px;
+  top: 30px;
+}
+ul.parent li:hover ul {
+  display: block;
 }/*# sourceMappingURL=style.css.map */

@@ -4,13 +4,40 @@
 }
 
 $color-white:white;
-$color-red:red;
-$color-grey:grey;
+$color-pink:pink;
+$color-purple:purple;
 
-ul{
+ul {
    list-style: none;
+   background-color: $color-purple;
 }
 
-ul{
+ul.parent{
     display: flex;
+    justify-content: center;
+    padding: 5px;
+    li{
+        position: relative;
+        a{
+            padding: 10px;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 20px;
+            color:$color-white;
+            &:hover{
+                color: $color-pink;
+            }
+        }
+        ul{
+                position: absolute;
+                display: none;
+                width: 200px;
+                top: 30px;
+        }
+        &:hover{
+            ul{
+                display: block;
+            }
+        }
+    }
 }
