@@ -1,14 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-}
-
-ul {
-  list-style: none;
-  background-color: purple;
+  overflow: visible;
 }
 
 ul.parent {
+  list-style: none;
+  background-color: #8C4413;
   display: flex;
   justify-content: center;
   padding: 5px;
@@ -34,4 +32,44 @@ ul.parent li ul {
 }
 ul.parent li:hover ul {
   display: block;
+}
+
+.header {
+  background-color: brown;
+}
+.header img {
+  height: 300px;
+  width: 100%;
+}
+
+.content .products {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.content .products li {
+  list-style: none;
+  width: 200px;
+  height: 200px;
+  background-color: #E5AA70;
+  position: relative;
+}
+.content .products li button {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  background-color: #DAA06D;
+  border: none;
+}
+.content .products li:hover ul {
+  display: block;
+}
+.content .products li img {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  left: 50px;
+  bottom: 30px;
 }/*# sourceMappingURL=style.css.map */
