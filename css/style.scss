@@ -3,3 +3,51 @@
     padding: 0;
 }
 
+body {
+    display: grid;
+    place-items: center; 
+    height: 100vh;
+    background-color:teal;
+}
+
+.container{
+    height: 360px;
+    width: 400px;
+    background-color:lightgray;
+    border: none;
+    border-radius: 20px;
+    .login{
+        input{
+            padding: 10px;
+            margin: 10px;
+            left:50px;
+            width: 95%;
+            border: none;
+            border-radius: 10px;
+        }
+        h1{
+            font-family:sans-serif; 
+            padding-left: 20px;
+            padding-top: 40px;
+            color: teal;
+        }
+        a{
+            padding: 20px;
+            margin-bottom: 20px;
+            text-decoration: none;
+        }
+        button{
+            border: none;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 10px;
+            background-color:teal;
+            color: white;
+            width: 95%;
+            &:hover{
+                background-color: gray;
+                color: black;
+            }
+        }
+    }
+}
